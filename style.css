@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+/* 共通 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+div {
+  margin-bottom: 0;
+}
+
+html {
+  font-size: 12px;
+}
+
+#container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+#nav {
+  display: flex;
+  column-gap: 15px;
+}
+
+#nav li {
+  list-style: none;
+}
+
+#nav li:first-child,
+#nav li:nth-child(2) {
+  color: #989191;
+}
+
+.dropdown {
+  font-weight: bold;
+  color: black;
+}
+
+.dropdown:nth-child(3) {
+  color: #d12323;
+  border-bottom: 3px solid #d12323;
+  padding: 0 10px 10px;
+}
+
+/* メインコンテンツ */
+
+#wrapper {
+  display: flex;
+  margin-top: 20px;
+  column-gap: 40px;
+}
+
+#main {
+  width: 85%;
+  border-top: 5px solid black;
+}
+
+#converter-info1 {
+  margin-top: 15px;
+}
+
+#converter-info1 h2 {
+  font-size: 2rem;
+}
+
+#converter-info1 p {
+  font-size: 1.25rem;
+}
+
+#detail-info1 {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  border-top: 1px solid #ababab;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+#detail-info1 p, ol {
+  margin-top: 15px;
+}
+
+#detail-info1 ol {
+  margin-left: 15px;
+}
+
+#detail-info1 p, li {
+  font-size: 0.8rem;
+  color: #989191;
+}
+
+#converter {
+  margin-top: 30px;
+  background-color: #f5f8e8;
+  padding: 20px;
+}
+
+#output-area {
+  margin-top: 20px;
+}
+
+#converter-info2 {
+  margin-top: 30px;
+}
+
+.info-box1 {
+  width: 50%;
+}
+
+#input-box {
+  display: flex;
+  column-gap: 15px;
+  row-gap: 25px;
+  flex-wrap: wrap;
+}
+
+#input-box div {
+  width: 23%;
+}
+
+#input-box input {
+  margin-top: 15px;
+  padding: 10px 0;
+}
+
+.color-code-input {
+  width: 55%;
+}
+
+.rgb-input {
+  width: 31%;
+}
+
+.rgba-input {
+  width: 95%;
+}
+
+.hsv-input {
+  width: 31%;
+}
+
+#convert-btn {
+  width: 100%;
+  padding: 5px 30px!important;
+}
+
+#clear-btn {
+  width: 50%;
+  padding: 5px 15px!important;
+}
+
+#output-box {
+  margin-top: 30px;
+}
+
+#output-area {
+  margin-top: 20px;
+}
+
+#output-area h2 {
+  border-bottom: 1px solid #ababab;
+}
+
+#output-box {
+  display: flex;
+  column-gap: 15px;
+}
+
+#output-box-left {
+  background-color: black!important;
+  width: 100px;
+  height: 100px;
+}
+
+#output-box-right {
+  display: flex;
+  flex-flow: column;
+  row-gap: 10px;
+}
+
+#output-box-right div {
+  display: flex;
+  flex-flow: row;
+  column-gap: 20px;
+}
+
+#output-box-right input {
+  padding: 10px 0;
+}
+
+.color-code-output {
+  width: 20%;
+}
+
+.rgb-output {
+  width: 10%;
+}
+
+.rgba-output {
+  width: 30%;
+}
+
+.hsv-output {
+  width: 10%;
+}
+
+#converter-info2 {
+  padding: 15px;
+  border: 1px solid #ababab;
+  border-radius: 5px;
+}
+
+.info-box2:nth-child(2),
+.info-box2:last-child {
+  margin-top: 10px;
+}
+
+.info-box2 h3 {
+  border-bottom: 1px solid #ababab;
+}
+
+#converter-info2 ol {
+  margin-left: 15px;
+}
+
+/* サイドバー */
+
+#sidebar {
+  width: 15%;
+}
+
+#sidebar p {
+
+}
+
+#tool-lead,
+.tool,
+.tool-link {
+  padding: 10px 5px;
+  border: 1px solid #ababab;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#tool-lead h3 {
+  border-bottom: 1px solid #ababab; 
+  padding-bottom: 5px;
+}
+
+#tool-lead p {
+  margin-top: 5px;
+  width: 100%;
+  word-wrap: break-word;
+  color: #989191;
+}
+
+#tool-lead-area {
+  padding-bottom: 10px;
+  background-image: url("https://tech-unlimited.com/images/ico_arrow_under.gif");  
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 20px!important;
+}
+
+.tool {
+  margin-top: 10px;
+}
+
+.tool p {
+  color: #989191;
+}
+
+#tool-link-area {
+  margin-top: 150px;
+}
+
+.tool-link {
+  margin-top: 10px;
+}
+
+/* フッター */
+
+footer {
+  margin-top: 30px;
+  border-top: 1px solid black;
+}
+
+#footer-nav {
+  display: flex;
+  column-gap: 15px;
+}
+
+.footer-nav-item {
+  width: 220px;
+  padding-top: 15px;
+}
+
+.footer-nav-item h3 {
+  border-bottom: 1px dotted black;
+  padding-bottom: 10px;
+}
+
+.footer-nav-item li {
+  padding-top: 5px;
+  list-style: none;
+}
+
+#float {
+  float: right;
+  width: 220px;
+}
+
+#copyright-area {
+  padding: 30px 0 50px;
+  margin-top: 10px;
+  border-top: 1px solid black;
+  text-align: center;
+}
